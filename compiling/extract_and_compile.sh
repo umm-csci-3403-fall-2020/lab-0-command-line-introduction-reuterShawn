@@ -4,13 +4,13 @@
 
 #Extract NthPrime.tgz file and create NthPrime directory
 tar -xf NthPrime.tgz --one-top-level
-cd  NthPrime
+cd  NthPrime || exit
 
 #Compile the files in NthPrime Directory
 gcc -c main.c nth_prime.c
 gcc main.o nth_prime.o -o NthPrime
 
 function extract_and_compile() {
-./NthPrime $1
+./NthPrime "$1"
 }
-extract_and_compile $1
+extract_and_compile "$1"
