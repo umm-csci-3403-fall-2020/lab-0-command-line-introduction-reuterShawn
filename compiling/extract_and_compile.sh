@@ -6,3 +6,7 @@
 tar -xf NthPrime.tgz --one-top-level
 cd  NthPrime
 
+#Compile the files in NthPrime Directory
+gcc -c main.c nth_prime.c
+gcc main.o nth_prime.o -o NthPrime
+
