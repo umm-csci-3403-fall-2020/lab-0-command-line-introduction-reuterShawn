@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #Script that extracts content of tar archive and compiles into the current directory. Then it compiles the C program 
 #that was extracted generating executable called NthPrime that we can call in our function. 
 
