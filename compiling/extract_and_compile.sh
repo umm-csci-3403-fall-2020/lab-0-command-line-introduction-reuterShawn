@@ -10,3 +10,7 @@ cd  NthPrime
 gcc -c main.c nth_prime.c
 gcc main.o nth_prime.o -o NthPrime
 
+function extract_and_compile() {
+./NthPrime $1
+}
+extract_and_compile $1
